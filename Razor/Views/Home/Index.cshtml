@@ -47,16 +47,16 @@
     @{
         int ContaLettere(string parola)
         {
-            string[] arrayParola = parola.Split();
-            int numeroLettera = 0;
-            for(int i = 0; i < arrayParola.Length; i++)
+            int numeroLettere = 0;
+            char[] lettereParola = parola.ToCharArray();
+            for(int i = 0; i < lettereParola.Length; i++)
             {
-                if(arrayParola[i] == "a")
+                if(lettereParola[i] == 'a')
                 {
-                    numeroLettera++;
+                    numeroLettere++;
                 }
             }
-            return numeroLettera;
+            return numeroLettere;
         }
     }
 
